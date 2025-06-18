@@ -6,7 +6,7 @@ const joined = ref(false);
 </script>
 
 <template>
-  <main class="relative flex flex-wrap justify-between background bg-cover min-h-screen p-8">
+  <main class="relative gap-4 flex flex-wrap justify-between background bg-cover min-h-screen p-8">
     <div class="absolute inset-0 to-black bg-linear-to-l" />
 
     <div class="flex flex-col gap-4 z-10 relative">
@@ -50,7 +50,7 @@ const joined = ref(false);
         <p>Wiki</p>
         <p>Join the discord</p>
 
-        <div class="hidden h-full w-0.5 bg-neutral-800 rounded-full" />
+        <div class="hidden lg:block h-full w-0.5 bg-neutral-800 rounded-full" />
 
         <p>Privacy Policy</p>
         <p>Terms of Service</p>
@@ -60,7 +60,7 @@ const joined = ref(false);
       </div>
     </div>
 
-    <article class="hidden self-end z-10 bg-(--ui-bg)/50 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium">
+    <article class="self-end z-10 bg-(--ui-bg)/50 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium">
       <div class="flex gap-2 items-center p-4">
         <UIcon name="i-fluent-megaphone-loud-20-regular" class="size-6 text-white" />
         <p>Announcements</p>
