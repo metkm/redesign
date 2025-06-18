@@ -36,7 +36,7 @@ const joined = ref(false)
           >
             <div>
               <p class="text-xl">
-                {{ joined ? "Joined" : "Join" }} next game
+                {{ joined ? 'Joined' : 'Join next game' }}
               </p>
 
               <div class="flex items-center gap-2 mb-1 text-sm">
