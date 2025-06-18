@@ -11,7 +11,7 @@ const joined = ref(false)
 
     <div class="flex-1" />
 
-    <div class="flex flex-col gap-4 z-10 relative w-max">
+    <div class="flex flex-col justify-between gap-4 z-10 relative w-max">
       <VIcon class="max-w-lg mx-auto" />
 
       <section class="flex flex-col justify-center max-w-lg mx-auto w-full">
@@ -70,23 +70,23 @@ const joined = ref(false)
         <UButton>Settings</UButton>
         <UButton>Instructions</UButton>
         <UButton>Language</UButton>
+
+        <article class="self-end z-10 bg-(--ui-bg)/10 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium text-sm mx-auto w-full max-w-lg mt-4">
+          <div class="flex gap-2 items-center p-3">
+            <UIcon
+              name="i-fluent-megaphone-loud-20-regular"
+              class="size-6 text-white"
+            />
+            <p>Announcements</p>
+          </div>
+
+          <section class="p-4">
+            <p>V22 Meta is back!</p>
+          </section>
+        </article>
       </section>
 
-      <article class="self-end z-10 bg-(--ui-bg)/10 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium text-sm mx-auto w-full max-w-lg">
-        <div class="flex gap-2 items-center p-3">
-          <UIcon
-            name="i-fluent-megaphone-loud-20-regular"
-            class="size-6 text-white"
-          />
-          <p>Announcements</p>
-        </div>
-
-        <section class="p-4">
-          <p>V22 Meta is back!</p>
-        </section>
-      </article>
-
-      <div class="flex flex-wrap items-center gap-4 gap-y-2 text-(--ui-text-dimmed) font-medium mt-auto">
+      <div class="flex flex-wrap items-center gap-4 gap-y-2 text-(--ui-text-dimmed) font-medium">
         <p>Wiki</p>
         <p>Join the discord</p>
 
