@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const countries = ["US", "UK"];
-const country = ref(countries[0]);
+const countries = ['US', 'UK']
+const country = ref(countries[0])
 
-const joined = ref(false);
+const joined = ref(false)
 </script>
 
 <template>
@@ -15,31 +15,48 @@ const joined = ref(false);
       <section class="flex flex-col justify-center grow max-w-lg">
         <div class="flex flex-col gap-4">
           <UButtonGroup class="grow">
-            <USelectMenu v-model="country" :items="countries" variant="soft" />
-            <UInput placeholder="enter your username" variant="soft" class="grow" />
+            <USelectMenu
+              v-model="country"
+              :items="countries"
+              variant="soft"
+            />
+            <UInput
+              placeholder="enter your username"
+              variant="soft"
+              class="grow"
+            />
           </UButtonGroup>
 
           <button
-            class="font-medium flex flex-col gap-1 items-start py-2 px-3 hover:bg-black/50 rounded-(--ui-radius) transition-colors"
-            :class="{ '!bg-(--ui-primary)': joined }"
+            class="font-medium flex flex-col gap-1 items-start py-2 px-3 bg-(--ui-primary) hover:bg-(--ui-primary)/50 rounded-(--ui-radius) transition-colors"
+            :class="{ '!bg-green-600': joined }"
             @click="joined = !joined"
           >
-            <p class="text-xl">{{ joined ? "Joined" : "Join" }} next game</p>
+            <p class="text-xl">
+              {{ joined ? "Joined" : "Join" }} next game
+            </p>
 
             <div class="flex items-center gap-2 mb-1">
-              <p class="bg-white px-2 text-sm text-(--ui-primary)">Free for all</p>
+              <p class="bg-white px-2 text-sm text-(--ui-primary)">
+                Free for all
+              </p>
               <p>World</p>
             </div>
           </button>
 
           <div class="grid md:grid-cols-2">
-            <UButton class="justify-center">Create lobby</UButton>
-            <UButton class="justify-center">Join lobby</UButton>
+            <UButton class="justify-center">
+              Create lobby
+            </UButton>
+            <UButton class="justify-center">
+              Join lobby
+            </UButton>
           </div>
         </div>
 
         <div class="h-0.5 bg-neutral-800 rounded-full my-4 mx-12" />
 
+        <UButton>Join with Discord</UButton>
         <UButton>Singleplayer</UButton>
         <UButton>Settings</UButton>
         <UButton>Instructions</UButton>
@@ -62,7 +79,10 @@ const joined = ref(false);
 
     <article class="self-end z-10 bg-(--ui-bg)/50 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium">
       <div class="flex gap-2 items-center p-4">
-        <UIcon name="i-fluent-megaphone-loud-20-regular" class="size-6 text-white" />
+        <UIcon
+          name="i-fluent-megaphone-loud-20-regular"
+          class="size-6 text-white"
+        />
         <p>Announcements</p>
       </div>
 

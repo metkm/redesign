@@ -6,9 +6,21 @@
     class="fill-primary logo w-full"
   >
     <defs>
-      <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color: #2563eb" />
-        <stop offset="100%" style="stop-color: #3b82f6" />
+      <linearGradient
+        id="logo-gradient"
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="0%"
+      >
+        <stop
+          offset="0%"
+          style="stop-color: #2563eb"
+        />
+        <stop
+          offset="100%"
+          style="stop-color: #3b82f6"
+        />
       </linearGradient>
     </defs>
     <g>
