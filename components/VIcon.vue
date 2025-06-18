@@ -3,7 +3,7 @@
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1364 259"
     height="100"
-    class="fill-primary logo"
+    class="fill-primary logo w-full"
   >
     <defs>
       <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">

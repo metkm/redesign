@@ -6,10 +6,10 @@ const joined = ref(false);
 </script>
 
 <template>
-  <main class="flex justify-between background bg-cover min-h-screen p-8">
+  <main class="relative flex flex-wrap justify-between background bg-cover min-h-screen p-8">
     <div class="absolute inset-0 to-black bg-linear-to-l" />
 
-    <div class="flex flex-col z-10 relative">
+    <div class="flex flex-col gap-4 z-10 relative">
       <VIcon class="max-w-lg" />
 
       <section class="flex flex-col justify-center grow max-w-lg">
@@ -32,9 +32,9 @@ const joined = ref(false);
             </div>
           </button>
 
-          <div class="grid grid-cols-2">
-            <UButton block>Create lobby</UButton>
-            <UButton block>Join lobby</UButton>
+          <div class="grid md:grid-cols-2">
+            <UButton class="justify-center">Create lobby</UButton>
+            <UButton class="justify-center">Join lobby</UButton>
           </div>
         </div>
 
@@ -46,11 +46,11 @@ const joined = ref(false);
         <UButton>Language</UButton>
       </section>
 
-      <div class="flex items-center gap-4 text-(--ui-text-dimmed) font-medium">
+      <div class="flex flex-wrap items-center gap-4 gap-y-2 text-(--ui-text-dimmed) font-medium">
         <p>Wiki</p>
         <p>Join the discord</p>
 
-        <div class="h-full w-0.5 bg-neutral-800 rounded-full" />
+        <div class="hidden h-full w-0.5 bg-neutral-800 rounded-full" />
 
         <p>Privacy Policy</p>
         <p>Terms of Service</p>
@@ -60,7 +60,7 @@ const joined = ref(false);
       </div>
     </div>
 
-    <article class="self-end z-10 bg-(--ui-bg)/50 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium">
+    <article class="hidden self-end z-10 bg-(--ui-bg)/50 rounded-(--ui-radius) divide-y-2 divide-black/20 font-medium">
       <div class="flex gap-2 items-center p-4">
         <UIcon name="i-fluent-megaphone-loud-20-regular" class="size-6 text-white" />
         <p>Announcements</p>
